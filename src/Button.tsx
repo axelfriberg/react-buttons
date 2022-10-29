@@ -6,10 +6,17 @@ type ButtonVariant = "contained" | "outlined";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
 }
 
 export function Button(props: ButtonProps) {
-  const { children, variant = "contained", startIcon, ...otherProps } = props;
+  const {
+    children,
+    variant = "contained",
+    startIcon,
+    endIcon,
+    ...otherProps
+  } = props;
 
   return (
     <button
@@ -19,6 +26,7 @@ export function Button(props: ButtonProps) {
     >
       {startIcon && <span className={classes["start-icon"]}>{startIcon}</span>}
       {children}
+      {endIcon && <span className={classes["end-icon"]}>{endIcon}</span>}
     </button>
   );
 }

@@ -2,6 +2,7 @@ import "./App.css";
 import { Button } from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faSave } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         <Button variant="outlined">Outlined</Button>
         <Button startIcon={<FontAwesomeIcon icon={faEnvelope} />}>
           Start Icon
+        </Button>
+        <Button variant="outlined" endIcon={<FontAwesomeIcon icon={faSave} />}>
+          End Icon
         </Button>
       </div>
     </div>
