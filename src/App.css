@@ -6,7 +6,8 @@
 }
 
 .button-container {
-  display: flex;
+  display: grid;
   gap: 16px;
+  grid-template-columns: max-content max-content;
   justify-content: center;
 }
