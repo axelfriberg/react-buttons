@@ -5,8 +5,7 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  color: #fff;
-  background-color: #003dae;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -15,28 +14,28 @@
 }
 
 .contained {
-  color: #fff;
-  background-color: #003dae;
+  color: var(--white);
+  background-color: var(--primary-purple);
 }
 
 .contained:hover {
-  background-color: #004bd3;
+  background-color: var(--secondary-purple);
 }
 
 .contained:focus,
 .contained:focus-visible {
   outline: 2px dashed #000;
-  background-color: #004bd3;
+  background-color: var(--secondary-purple);
 }
 
 .outlined {
-  border: 1px solid #003dae;
-  color: #003dae;
+  border: 1px solid var(--primary-purple);
+  color: var(--primary-purple);
   background-color: transparent;
 }
 
 .outlined:hover {
-  border-color: #004bd3;
+  border-color: var(--secondary-purple);
   background-color: rgba(0, 61, 174, 0.1);
 }
 
@@ -47,9 +46,9 @@
 }
 
 .start-icon {
-  margin-right: 8px;
+  margin-right: var(--spacing-small);
 }
 
 .end-icon {
-  margin-left: 8px;
+  margin-left: var(--spacing-small);
 }

@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --white: #fff;
+  --primary-purple: #003dae;
+  --secondary-purple: #004bd3;
+  --spacing-small: 8px;
 }
 
 .button-container {
