@@ -1,4 +1,4 @@
-.contained {
+.button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -8,6 +8,11 @@
   color: #fff;
   background-color: #003dae;
   cursor: pointer;
+}
+
+.contained {
+  color: #fff;
+  background-color: #003dae;
 }
 
 .contained:hover {
@@ -21,15 +26,9 @@
 }
 
 .outlined {
-  border-radius: 8px;
   border: 1px solid #003dae;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
   color: #003dae;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .outlined:hover {
@@ -41,4 +40,8 @@
 .outlined:focus-visible {
   outline: 2px dashed #000;
   background-color: rgba(0, 61, 174, 0.1);
+}
+
+.start-icon {
+  margin-right: 8px;
 }

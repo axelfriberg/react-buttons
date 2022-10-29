@@ -1,5 +1,7 @@
 import "./App.css";
 import { Button } from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -8,6 +10,9 @@ function App() {
       <div className="button-container">
         <Button>Contained</Button>
         <Button variant="outlined">Outlined</Button>
+        <Button startIcon={<FontAwesomeIcon icon={faEnvelope} />}>
+          Start Icon
+        </Button>
       </div>
     </div>
   );
